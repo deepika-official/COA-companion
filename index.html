@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>COA Companion</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header>🎓 COA Companion <span style="font-weight:400;font-size:13px">· Computer Organization &amp; Architecture · by Deepika</span></header>
+<nav id="nav"></nav>
+<main>
+<section id="dash"></section>
+<section id="lib" hidden></section>
+<section id="tutor" hidden>
+ <div class="card"><b>🤖 AI Tutor</b><div class="m">Ask any COA question. I answer only from the study notes in this site.</div>
+ <div id="chips"></div></div>
+ <div id="chat"></div>
+ <div style="display:flex;gap:6px"><input id="q" placeholder="e.g. What is Booth's algorithm?"><button class="a" onclick="ask()">Ask</button></div>
+</section>
+<section id="quiz" hidden></section>
+<section id="plan" hidden>
+ <div class="card"><b>🗓️ Study Planner</b>
+ <input id="tt" placeholder="Task, e.g. Revise cache mapping">
+ <select id="tu"></select><input id="td" type="date">
+ <button class="a" onclick="addT()">Add task</button></div>
+ <div id="tl"></div>
+</section>
+</main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body></html>
